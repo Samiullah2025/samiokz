@@ -1,0 +1,29 @@
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Limit to 2 columns */
+    gap: 20px; /* Space between items */
+    max-width: 100%; /* Optional: Limit the width of the section */
+    margin: auto; /* Center the grid in the section */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add background for better readability */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: gray;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
